@@ -5,7 +5,6 @@
     <meta charset="utf8">
     <title>Friend Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/esm/popper-utils.js">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -26,7 +25,7 @@
         <div>
             <h2>Question 1</h2>
             <h3>You find that you enjoy all movies and not one genre.</h3>
-            <select id="q1" placeholder="Select an Answer">
+            <select id="q" placeholder="Select an Answer">
                 <option value>Select an Answer:</option>
                 <option value="1">1 (No, no, oh and NOO!)</option>
                 <option value="2">2</option>
@@ -36,7 +35,7 @@
             </select>
             <h2>Question 2</h2>
             <h3>Sports (either participation or viewing) is an important aspect of your life.</h3>
-            <select id="q2" placeholder="Select an Answer">
+            <select id="q" placeholder="Select an Answer">
                 <option value>Select an Answer:</option>
                 <option value="1">1 (No, no, oh and NOO!)</option>
                 <option value="2">2</option>
@@ -46,7 +45,7 @@
             </select>
             <h2>Question 3</h2>
             <h3>You are easy to please.</h3>
-            <select id="q3" placeholder="Select an Answer">
+            <select id="q" placeholder="Select an Answer">
                 <option value>Select an Answer:</option>
                 <option value="1">1 (No, no, oh and NOO!)</option>
                 <option value="2">2</option>
@@ -124,13 +123,14 @@
                 <option value="4">4</option>
                 <option value="5">5 (YES, YES, YES!)</option>
             </select>
+            <button type="submit" id="getanswer">Submit</button>
         </div>
         <div>
             <a href="#">API Friends List</a>
             <a href="https://github.com/leopoldleopold/FriendFinder">Git Hub</a>
         </div>
     </div>
-
+    <script src="app/data/friends.js"></script>
 </body>
 
 </html>
