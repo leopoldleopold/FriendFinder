@@ -140,7 +140,7 @@
         var friends = [];
         function getAnswer() {
             event.preventDefault;
-            var friend = {
+            let friend = {
                 name: $("#name").val().trim(),
                 photo: $("#photo").val().trim(),
                 quote: $("#quote").val().trim(),
@@ -156,13 +156,18 @@
                 $("#q10").val()
                 ]
             }
-
-            $(".info").val(0);
-            friends.push(friend);
-            console.log(friend);
+            let a = friend, member = JSON.stringify(friend);
+            $.post("../data/friends.js", member);
+            // console.log(member);
+            pairFriend(a, member);
+            // $(".info").val(0);
+            // friends.push(friend);
+            // console.log(friend);
         };
         // math function
         function pairFriend(x, y) {
+            console.log(x);
+            console.log(y);
 // if a > b, minus a -b. if b is greater, minus. else if is 0
         }
     </script>
